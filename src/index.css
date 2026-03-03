@@ -117,3 +117,6 @@
 .animate-pulse-whatsapp {
   animation: pulse-whatsapp 2s infinite;
 }
+ #lovable-badge {
+display: none !important;
+}
