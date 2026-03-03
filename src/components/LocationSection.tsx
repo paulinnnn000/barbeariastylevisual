@@ -70,7 +70,7 @@ export default function LocationSection() {
               href={MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 border border-gold text-gold px-6 py-3 rounded font-semibold text-center hover:bg-gold/10 transition-all duration-300"
+              className="mt-4 border border-gold text-gold px-6 py-3 rounded-full font-semibold text-center hover:bg-gold/10 hover:scale-105 transition-all duration-300"
             >
               Abrir no Google Maps
             </a>

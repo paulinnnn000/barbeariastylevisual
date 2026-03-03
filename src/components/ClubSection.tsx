@@ -15,7 +15,6 @@ export default function ClubSection() {
 
   return (
     <section id="clube" className="py-20 md:py-28 relative overflow-hidden">
-      {/* Diagonal gold accents */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute top-0 left-0 w-full h-full" style={{
           backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 60px, hsl(41 46% 57%) 60px, hsl(41 46% 57%) 61px)"
@@ -52,7 +51,7 @@ export default function ClubSection() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-primary text-primary-foreground px-10 py-4 rounded font-semibold text-lg hover:brightness-110 glow-gold transition-all duration-300"
+            className="inline-block bg-primary text-primary-foreground px-10 py-4 rounded-full font-semibold text-lg hover:brightness-110 hover:scale-105 glow-gold transition-all duration-300"
           >
             Quero fazer parte
           </a>
