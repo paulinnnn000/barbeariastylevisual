@@ -49,7 +49,7 @@ export default function Navbar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground px-5 py-2 rounded text-sm font-semibold hover:brightness-110 transition-all duration-300"
+            className="bg-primary text-primary-foreground px-5 py-2 rounded-full text-sm font-semibold hover:brightness-110 transition-all duration-300"
           >
             Agendar Agora
           </a>
@@ -83,7 +83,7 @@ export default function Navbar() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-5 py-3 rounded text-center font-semibold mt-2"
+              className="bg-primary text-primary-foreground px-5 py-3 rounded-full text-center font-semibold mt-2"
             >
               Agendar Agora
             </a>

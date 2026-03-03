@@ -24,20 +24,30 @@ export default function HeroSection() {
       <img
         src={heroBg}
         alt="Barbearia Style Visual interior"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/75 to-background" />
+      
+      {/* Decorative gold line */}
+      <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent -translate-y-20" />
 
       <div
-        className={`relative z-10 text-center px-4 max-w-3xl mx-auto transition-all duration-1000 ${
+        className={`relative z-10 text-center px-6 max-w-4xl mx-auto transition-all duration-1000 ${
           loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-shadow-gold">
+        {/* Slogan badge */}
+        <div className={`inline-block mb-8 px-5 py-2 rounded-full border border-gold/30 bg-gold/5 backdrop-blur-sm transition-all duration-1000 delay-300 ${loaded ? "opacity-100" : "opacity-0"}`}>
+          <span className="text-gold text-xs md:text-sm font-medium tracking-[0.25em] uppercase">
+            Quem tem estilo passa aqui
+          </span>
+        </div>
+
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-shadow-gold leading-tight">
           <span className="text-gold">{displayed}</span>
-          <span className="inline-block w-[3px] h-[1em] bg-gold ml-1 animate-pulse align-middle" />
+          <span className="inline-block w-[3px] h-[0.8em] bg-gold ml-1 animate-pulse align-middle" />
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground mb-10 font-light tracking-wide">
+        <p className="text-lg md:text-xl text-muted-foreground mb-12 font-light tracking-wide max-w-xl mx-auto">
           Estilo, precisão e exclusividade desde 2012
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -45,16 +55,23 @@ export default function HeroSection() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground px-8 py-4 rounded font-semibold text-lg hover:brightness-110 glow-gold transition-all duration-300"
+            className="bg-primary text-primary-foreground px-10 py-4 rounded-full font-semibold text-lg hover:brightness-110 hover:scale-105 glow-gold transition-all duration-300"
           >
             Agendar pelo WhatsApp
           </a>
           <a
             href="#clube"
-            className="border border-gold text-gold px-8 py-4 rounded font-semibold text-lg hover:bg-gold/10 transition-all duration-300"
+            className="border border-gold/60 text-gold px-10 py-4 rounded-full font-semibold text-lg hover:bg-gold/10 hover:border-gold hover:scale-105 transition-all duration-300"
           >
             Conheça o Clube
           </a>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className={`mt-16 transition-all duration-1000 delay-[1.5s] ${loaded ? "opacity-100" : "opacity-0"}`}>
+          <div className="w-6 h-10 border-2 border-gold/30 rounded-full mx-auto flex justify-center">
+            <div className="w-1 h-3 bg-gold/50 rounded-full mt-2 animate-bounce" />
+          </div>
         </div>
       </div>
     </section>
